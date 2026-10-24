@@ -1,0 +1,3 @@
+# Exercise 5 Reflection
+
+URLSession's asynchronous data task plays a role similar to Retrofit's `enqueue()` because both send a request without blocking the user interface and deliver the result later through callbacks. In the iOS project, the completion handler checks the network error, HTTP response status, and response data before using the result. Codable and JSONDecoder provide typed JSON parsing similar to Gson's `fromJson()` in Android. After decoding, the app updates Core Data and refreshes the table view on the main thread so the downloaded announcements can be displayed and persist between launches.
